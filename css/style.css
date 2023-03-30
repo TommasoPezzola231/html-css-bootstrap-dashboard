@@ -28,4 +28,6 @@ header nav {
 /******Main********/
 main {
     padding-top: var(--navbar-height);
+    width: 100%;
+    overflow-y: auto;
 }
