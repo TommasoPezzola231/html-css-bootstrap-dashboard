@@ -17,7 +17,8 @@
         <nav class="navbar">
             <div class="container">
                 <a class="" href="#">
-                    <img src="./img/mobile-logo.png" alt="Logo piccolo" class="img-fluid" width="40px">
+                    <img src="./img/mobile-logo.png" alt="Logo piccolo" class="img-fluid d-lg-none" width="40px">
+                    <img src="./img/logo.svg" alt="logo grande" class="img-fluid d-none d-lg-block">
                 </a>
                 <form class="col-9">
                     <div class="input-group">
@@ -26,8 +27,11 @@
                     </div>
                 </form>
 
-                <div>
-                    <i class="fa-solid fa-bell text-warning"></i>
+                <div class="col-auto d-flex justify-content-betwen">
+                    <i class="fa-solid fa-list d-none d-lg-block mx-1"></i>
+                    <i class="fa-solid fa-circle-info d-none d-lg-block mx-1"></i>
+                    <i class="fa-solid fa-compass d-none d-lg-block mx-1"></i>
+                    <i class="fa-solid fa-bell text-warning mx-lg-1"></i>
                 </div>
 
             </div>
