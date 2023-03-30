@@ -5,3 +5,15 @@
 header nav {
     height: var(--navbar-height);
 }
+
+.sidebar {
+    background-image: url(../img/sidebar-bg.png);
+    padding-top: var(--navbar-height);
+    width: 70px;
+    height: 100vh;
+    background-color: #051e34;
+}
+
+.sidebar section:first-child {
+    height: 100%;
+}
