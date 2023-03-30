@@ -14,6 +14,12 @@ header nav {
     background-color: #051e34;
 }
 
+@media screen and (min-width: 992px) {
+    .sidebar{
+        width: 150px;
+    }
+}
+
 .sidebar section:first-child {
     height: 100%;
 }
