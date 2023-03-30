@@ -6,6 +6,7 @@ header nav {
     height: var(--navbar-height);
 }
 
+/********Sidebar*********/
 .sidebar {
     background-image: url(../img/sidebar-bg.png);
     padding-top: var(--navbar-height);
@@ -22,4 +23,9 @@ header nav {
 
 .sidebar section:first-child {
     height: 100%;
+}
+
+/******Main********/
+main {
+    padding-top: var(--navbar-height);
 }
