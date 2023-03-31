@@ -17,14 +17,14 @@
     <header class="fixed-top">
         <nav class="navbar bg-white">
             <div class="container-fluid">
-                <a class="" href="#">
+                <a class="col-auto" href="#">
                     <img src="./img/mobile-logo.png" alt="Logo piccolo" class="img-fluid d-lg-none" width="40px">
                     <img src="./img/logo.svg" alt="logo grande" class="img-fluid d-none d-lg-block">
                 </a>
                 <form class="col-9">
                     <div class="input-group">
                       <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
-                      <input type="text" class="form-control" placeholder="Prova a cercare: lezioni di Laravel" aria-label="Username" aria-describedby="basic-addon1">
+                      <input type="text" class="form-control" placeholder="Prova a cercare: lezioni di Laravel, Tranquillo non succederà nulla!" aria-label="Username" aria-describedby="basic-addon1">
                     </div>
                 </form>
 
@@ -41,42 +41,45 @@
         </nav>
     </header>
 
-    <!--sidebar-->
+    <!--Contenitore sidebar e main-->
     <div class="d-flex">
+
+        <!--Sidebar-->
         <div class="sidebar d-flex flex-column text-white">
             <section class="d-flex flex-column">
                 <div class="row ">
-                    <div class="col-12 d-flex text-center my-2 my-lg-3 justify-content-center align-items-baseline">
+                    <div class="col-12 d-flex text-center my-2 my-lg-0 justify-content-center align-items-center hoverSidebar">
                         <i class="fa-solid fa-house"></i>
-                        <p class="d-none d-lg-block ms-2">Home</p>                   
+                        <p class="d-none d-lg-block ms-2 my-auto py-2">Home</p>                   
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col-12 d-flex text-center my-2 my-lg-3 justify-content-center align-items-baseline">
+                    <div class="col-12 d-flex text-center my-2 my-lg-0 justify-content-center align-items-center hoverSidebar">
                         <i class="fa-solid fa-signal"></i>  
-                        <p class="d-none d-lg-block ms-2">Home</p>                 
+                        <p class="d-none d-lg-block ms-2 my-auto py-2">Stats</p>                 
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col-12 d-flex text-center my-2 my-lg-3 justify-content-center align-items-baseline">
+                    <div class="col-12 d-flex text-center my-2 my-lg-0 justify-content-center align-items-center hoverSidebar">
                         <i class="fa-solid fa-database"></i>
-                        <p class="d-none d-lg-block ms-2">Home</p>                   
+                        <p class="d-none d-lg-block ms-2 my-auto py-2">Signals</p>                   
                     </div>
                 </div>
             </section>
 
             <section class="d-flex flex-column">
                 <div class="row">
-                    <div class="col-12 d-flex text-center my-2 my-lg-3 justify-content-center align-items-baseline">
+                    <div class="col-12 d-flex text-center my-2 my-lg-0 justify-content-center align-items-center hoverSidebar">
                         <i class="fa-solid fa-gear"></i>
-                        <p class="d-none d-lg-block ms-2">Home</p>                   
+                        <p class="d-none d-lg-block ms-2 my-auto py-2">Admin</p>                   
                     </div>
                 </div>
             </section>  
         </div>
 
+        <!--main-->
         <main>
             <section class="bg-primary text-white py-3">
                 <div class="container-fluid">
@@ -105,7 +108,7 @@
             </section>
 
             <!--Offcanvas-->
-            <div class="offcanvas offcanvas-end text-dark" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+            <div class="offcanvas offcanvas-end text-dark w-50" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
                 <div class="offcanvas-header">
                   <h5 class="offcanvas-title" id="staticBackdropLabel">Inserisci un nuovo studente</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -205,21 +208,21 @@
                                         <thead>
                                             <tr>
                                                 <th>Nome</th>
-                                                <th class="d-none d-md-inline-block">Data inizio</th>
-                                                <th class="d-none d-md-inline-block">ROI</th>
+                                                <th class="d-none d-md-table-cell">Data inizio</th>
+                                                <th class="d-none d-md-table-cell">ROI</th>
                                                 <th>Stato</th>
                                                 <th>Azioni</th>
                                             </tr>
                                         </thead>
                                         <tbody>
 
-                                            <tr>
+                                            <tr class="hoverTable">
                                                 <td>
                                                     <img src="./img/class-avatar.jpg" alt="logo classe" width="20px">
                                                     Classe 75
                                                 </td>
-                                                <td class="d-none d-md-inline-block">15 Feb 2021</td>
-                                                <td class="d-none d-md-inline-block">20%</td>
+                                                <td class="d-none d-md-table-cell">15 Feb 2021</td>
+                                                <td class="d-none d-md-table-cell">20%</td>
                                                 <td>
                                                     <span class="badge bg-success">Done</span>
                                                 </td>
@@ -229,13 +232,13 @@
                                                 </td>
                                             </tr>
 
-                                            <tr>
+                                            <tr class="hoverTable">
                                                 <td>
                                                     <img src="./img/class-avatar.jpg" alt="logo classe" width="20px">
                                                     Classe 76
                                                 </td>
-                                                <td class="d-none d-md-inline-block">16 Feb 2021</td>
-                                                <td class="d-none d-md-inline-block">20%</td>
+                                                <td class="d-none d-md-table-cell">16 Feb 2021</td>
+                                                <td class="d-none d-md-table-cell">20%</td>
                                                 <td>
                                                     <span class="badge bg-success">Done</span>
                                                 </td>
@@ -245,13 +248,13 @@
                                                 </td>
                                             </tr>
 
-                                            <tr>
+                                            <tr class="hoverTable">
                                                 <td>
                                                     <img src="./img/class-avatar.jpg" alt="logo classe" width="20px">
                                                     Classe 77
                                                 </td>
-                                                <td class="d-none d-md-inline-block">17 Feb 2021</td>
-                                                <td class="d-none d-md-inline-block">20%</td>
+                                                <td class="d-none d-md-table-cell">17 Feb 2021</td>
+                                                <td class="d-none d-md-table-cell">20%</td>
                                                 <td>
                                                     <span class="badge bg-warning">Process</span>
                                                 </td>
@@ -261,13 +264,13 @@
                                                 </td>
                                             </tr>
 
-                                            <tr>
+                                            <tr class="hoverTable">
                                                 <td>
                                                     <img src="./img/class-avatar.jpg" alt="logo classe" width="20px">
                                                     Classe 78
                                                 </td>
-                                                <td class="d-none d-md-inline-block">18 Feb 2021</td>
-                                                <td class="d-none d-md-inline-block">20%</td>
+                                                <td class="d-none d-md-table-cell">18 Feb 2021</td>
+                                                <td class="d-none d-md-table-cell">20%</td>
                                                 <td>
                                                     <span class="badge bg-success">Done</span>
                                                 </td>
@@ -277,13 +280,13 @@
                                                 </td>
                                             </tr>
 
-                                            <tr>
+                                            <tr class="hoverTable">
                                                 <td>
                                                     <img src="./img/class-avatar.jpg" alt="logo classe" width="20px">
                                                     Classe 79
                                                 </td>
-                                                <td class="d-none d-md-inline-block">19 Feb 2021</td>
-                                                <td class="d-none d-md-inline-block">20%</td>
+                                                <td class="d-none d-md-table-cell">19 Feb 2021</td>
+                                                <td class="d-none d-md-table-cell">20%</td>
                                                 <td>
                                                     <span class="badge bg-danger">Failed</span>
                                                 </td>
@@ -293,13 +296,13 @@
                                                 </td>
                                             </tr>
 
-                                            <tr>
+                                            <tr class="hoverTable">
                                                 <td>
                                                     <img src="./img/class-avatar.jpg" alt="logo classe" width="20px">
                                                     Classe 80
                                                 </td>
-                                                <td class="d-none d-md-inline-block">20 Feb 2021</td>
-                                                <td class="d-none d-md-inline-block">20%</td>
+                                                <td class="d-none d-md-table-cell">20 Feb 2021</td>
+                                                <td class="d-none d-md-table-cell">20%</td>
                                                 <td>
                                                     <span class="badge bg-success">Done</span>
                                                 </td>
@@ -309,13 +312,13 @@
                                                 </td>
                                             </tr>
 
-                                            <tr>
+                                            <tr class="hoverTable">
                                                 <td>
                                                     <img src="./img/class-avatar.jpg" alt="logo classe" width="20px">
                                                     Classe 81
                                                 </td>
-                                                <td class="d-none d-md-inline-block">21 Feb 2021</td>
-                                                <td class="d-none d-md-inline-block">20%</td>
+                                                <td class="d-none d-md-table-cell">21 Feb 2021</td>
+                                                <td class="d-none d-md-table-cell">20%</td>
                                                 <td>
                                                     <span class="badge bg-danger">Failed</span>
                                                 </td>
@@ -325,13 +328,13 @@
                                                 </td>
                                             </tr>
 
-                                            <tr>
+                                            <tr class="hoverTable">
                                                 <td>
                                                     <img src="./img/class-avatar.jpg" alt="logo classe" width="20px">
                                                     Classe 82
                                                 </td>
-                                                <td class="d-none d-md-inline-block">22 Feb 2021</td>
-                                                <td class="d-none d-md-inline-block">20%</td>
+                                                <td class="d-none d-md-table-cell">22 Feb 2021</td>
+                                                <td class="d-none d-md-table-cell">20%</td>
                                                 <td>
                                                     <span class="badge bg-success">Done</span>
                                                 </td>
