@@ -47,3 +47,14 @@ main {
     height: calc(100vh - var(--navbar-height));
     overflow-y: auto;
 }
+
+/*******Offcanvas*******/
+.widthOffcanvasCustom {
+    width: 100%!important;
+}
+
+@media screen and (min-width: 992px) {
+    .widthOffcanvasCustom {
+        width: 60%!important;
+    }
+}
