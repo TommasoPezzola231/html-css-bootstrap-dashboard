@@ -6,6 +6,10 @@ header nav {
     height: var(--navbar-height);
 }
 
+.dropstart .dropdown-toggle::before {
+    display: none;
+}
+
 /********Sidebar*********/
 .sidebar {
     background-image: url(../img/sidebar-bg.png);
